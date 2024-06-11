@@ -13,7 +13,7 @@ export class ServicesPlansService {
   findAll() {
     return this.prisma.servicesPlans.findMany();
   }
-
+      
   findOne(id: number) {
     return this.prisma.servicesPlans.findUnique({ where: { id } });
   }
