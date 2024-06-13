@@ -37,7 +37,7 @@ export class ServicesPlansComponent implements OnInit{
 
   delete(id: number): void {
     this.httpClient
-      .delete(`http://localhost:3000/api/${id}`)
+      .delete(`http://localhost:3000/services-plans/${id}`)
       .subscribe(() => {
         this.fetchData();
       });
